@@ -54,7 +54,104 @@
           <td><i>Substring del string</i></td>
           <td>{{arreglo | slice : 1 : 5}}</td>
       </tr>
-    </tbody>
+      <tr>
+        <th scope="row">5</th>
+        <td bgcolor="#9FF781" align="center" >{{PI}}</td>
+        <td><b>Decimal '3.0-0'</b></td>
+        <td><i>Decimal de PI, 3 enteros y 0 decimales</i></td>
+        <td>{{PI | number:'3.0-0'}}</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td bgcolor="#9FF781" align="center" >{{PI}}</td>
+      <td><b>Decimal '1.0-6'</b></td>
+      <td><i>Decimal de PI, 1 entero y 6 decimales</i></td>
+      <td>{{PI | number:'1.0-6'}}</td>
+  </tr>
+  <tr>
+    <th scope="row">7</th>
+    <td bgcolor="#9FF781" align="center" >{{porcentaje}}</td>
+    <td><b>percent (Porcentaje)</b></td>
+    <td><i>Convierte a porcentaje</i></td>
+    <td>{{porcentaje | percent}}</td>
+  </tr>
+  <tr>
+    <th scope="row">8</th>
+    <td bgcolor="#9FF781" align="center" >{{porcentaje}}</td>
+    <td><b>percent '2.2-2' (Porcentaje)</b></td>
+    <td><i>Convierte a porcentaje, 2 enteros y 2 decimales</i></td>
+    <td>{{porcentaje | percent:'2.2-2'}}</td>
+  </tr>
+  <tr>
+    <th scope="row">9</th>
+    <td bgcolor="#9FF781" align="center" >{{heroe | json}}</td>
+    <td><b>JSON</b></td>
+    <td><i>Convierte una cadena a formato JSON</i></td>
+    <td><pre>{{heroe | json}}</pre></td>
+  </tr>
+  <tr>
+    <th scope="row">10</th>
+    <td bgcolor="#9FF781" align="center" >{{valorDePromesa}}</td>
+    <td><b>Async</b></td>
+    <td><i>Espera 3.5 segundos el resultado de una operación asincrona</i></td>
+    <td>{{valorDePromesa | async}}</td>
+  </tr>
+  <tr>
+    <th scope="row">11</th>
+    <td bgcolor="#9FF781" align="center" >{{fecha}}</td>
+    <td><b>Date</b></td>
+    <td><i>Muestra la fecha con formato especifico - default</i></td>
+    <td>{{fecha | date}}</td>
+  </tr>
+  <tr>
+    <th scope="row">12</th>
+    <td bgcolor="#9FF781" align="center" >{{fecha}}</td>
+    <td><b>Date</b></td>
+    <td><i>Muestra la fecha con formato especifico - medium</i></td>
+    <td>{{fecha | date:'medium'}}</td>
+  </tr>
+  <tr>
+    <th scope="row">12</th>
+    <td bgcolor="#9FF781" align="center" >{{fecha}}</td>
+    <td><b>Date</b></td>
+    <td><i>Muestra la fecha con formato especifico - 'dd/MM/yyyy'</i></td>
+    <td>{{fecha | date:'dd/MM/yyyy'}}</td>
+  </tr>
+  <tr>
+    <th scope="row">12</th>
+    <td bgcolor="#9FF781" align="center" >{{fecha}}</td>
+    <td><b>Date</b></td>
+    <td><i>Muestra la fecha con formato especifico - 'dd/MM/yyyy HH:mm:ss'</i></td>
+    <td>{{fecha | date:'dd/MM/yyyy HH:mm:ss'}}</td>
+  </tr>
+  <tr>
+    <th scope="row">13</th>
+    <td bgcolor="#9FF781" align="center" >{{fecha}}</td>
+    <td><b>Date</b></td>
+    <td><i>Muestra la fecha con formato especifico - 'dd/MM/yyyy h:mm:ss aa'</i></td>
+    <td>{{fecha | date:'dd/MM/yyyy h:mm:ss aa'}}</td>
+  </tr>
+  <tr>
+    <th scope="row">14</th>
+    <td bgcolor="#9FF781" align="center" >{{fecha}}</td>
+    <td><b>Date</b></td>
+    <td><i>Muestra la fecha con formato especifico - 'MMMM-dd'</i></td>
+    <td>{{fecha | date:'MMMM-dd'}}</td>
+  </tr>
+  <tr>
+    <th scope="row">15</th>
+    <td bgcolor="#9FF781" align="center" >{{nombre2}}</td>
+    <td><b>PIPE personalizado</b></td>
+    <td><i>PIPE personalizado que cambia la primera letra de cada palabra de mayuscula a minscula según el parmetro que se envíe</i></td>
+    <td>{{nombre2 | capitalizado:true}}</td>
+  </tr>
+</tbody>
 </table>
+
+<!-- <h4>JSON</h4>
+<pre>
+{{heroe | json}}
+</pre> -->
+
 </div>
   
